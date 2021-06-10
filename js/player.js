@@ -31,12 +31,12 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
             //{
                 //this.anims.play('run');
             //}
-        } else {
+        } else  {
             this.setVelocityX(1);
             //if(this.anims.isPlaying) {
                 //this.anims.stop('run')
             //}
             //this.setFrame(this.initialFrame);
-        }
+        } 
     }
 }

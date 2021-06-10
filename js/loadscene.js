@@ -4,7 +4,14 @@ export class LoadScene extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('background', './images/bg3.png');
+        this.load.image('harpoon', './images/harpoon.png');
+        this.load.image('background2', './images/bg3.png');
+        this.load.image('background3', './images/bg5.png');
+        this.load.image('background', './images/bg4.png');
+        this.load.image('level1', '/images/level1.png');
+        this.load.image('level2', '/images/level2.png');
+        this.load.image('level3', '/images/level3.png');
+        this.load.image('life', '/images/life.png');
         this.load.image('balls', './ball/zero.png');
         this.load.spritesheet('player2', 'player/ghost3.png', {
             frameWidth: 400,

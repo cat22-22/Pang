@@ -12,15 +12,15 @@ export class Balls extends Phaser.Physics.Arcade.Sprite {
         this.initialFrame = frame;
         this.setCollideWorldBounds(true);
         this.setScale(0.4);
-        this.setBounce(1.0);
+        this.setBounce(1,1);
         this.initial_velocity = {
             min: {
                 x: -1000,
-                y: -100,
+                y: -1000,
             },
             max: {
-                x: 50,
-                y: -10,
+                x: 500,
+                y: -50,
             }
         }
         this.setVelocity(

@@ -19,14 +19,14 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
     update(time) {
         if(this.controls.left.isDown) {
             this.setVelocityX(-this.horizontal_velocity);
-            this.flipX = false;
+            this.flipX = true;
             //if(!this.anims.isPlaying)
             //{
                 //this.anims.play('run');
             //}
         } else if (this.controls.right.isDown) {
             this.setVelocityX(this.horizontal_velocity);
-            this.flipX = true;
+            this.flipX = false;
             //if(!this.anims.isPlaying)
             //{
                 //this.anims.play('run');

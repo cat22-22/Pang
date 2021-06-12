@@ -12,7 +12,12 @@ export class LoadScene extends Phaser.Scene {
         this.load.image('level2', '/images/level2.png');
         this.load.image('level3', '/images/level3.png');
         this.load.image('life', '/images/life.png');
+        this.load.image('changelevel', '/images/changelevelE.png');
+        this.load.image('changelevelto1', '/images/changelevelto1.png');
+
+
         this.load.image('balls', './ball/zero.png');
+
         this.load.spritesheet('player2', 'player/ghost3.png', {
             frameWidth: 400,
             frameHeigh: 400

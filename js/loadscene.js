@@ -6,6 +6,10 @@ export class LoadScene extends Phaser.Scene {
     preload() {
         this.load.image('harpoon', './images/harpoon.png');
         this.load.image('cutscene1', './images/cutscene1.png');
+        this.load.image('cutscene2', './images/cutscene2.png');
+        this.load.image('cutscene3', './images/cutscene3.png');
+        this.load.image('cutscene4', './images/cutscene4.png');
+        this.load.image('skip', './images/skipcutscene.png');
         this.load.image('victorymenu', './images/victorymenu.png');
         this.load.image('goback', './images/goback.png');
         this.load.image('victory', './images/victory.png');

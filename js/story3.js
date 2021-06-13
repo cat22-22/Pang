@@ -1,6 +1,6 @@
-export class Story1 extends Phaser.Scene {
+export class Story3 extends Phaser.Scene {
     constructor() {
-        super('story1');    
+        super('story3');    
     }
 
 
@@ -11,14 +11,14 @@ export class Story1 extends Phaser.Scene {
 
 
     create(){
-        this.add.image(-50, 30, 'cutscene1').setOrigin(0).setScale(0.5);
+        this.add.image(-50, 30, 'cutscene3').setOrigin(0).setScale(0.5);
         this.add.image(-60, 458, 'skip').setOrigin(0).setScale(0.7);
     }
 
     update(time){
         if (this.controls2.down.isDown)
         {
-            this.scene.start('story2');
+            this.scene.start('story4');
         }
     }
 }

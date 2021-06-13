@@ -71,7 +71,7 @@ export class Level003 extends Phaser.Scene {
 
     create() {
         this.add.image(0, 0, 'background3').setOrigin(0).setScale(0.6);
-        this.add.image(9, -10, 'changelevelto1').setOrigin(0).setScale(0.8);
+        this.add.image(-10, -10, 'changelevel').setOrigin(0).setScale(0.8);
         this.add.image(15, 10, 'life').setOrigin(0).setScale(0.3);
         this.add.image(825, 10, 'life').setOrigin(0).setScale(0.3);
 
@@ -173,7 +173,7 @@ export class Level003 extends Phaser.Scene {
 
         if (this.controls2.down.isDown)
         {
-            this.scene.start('Level001');
+            this.scene.start('victory');
         }
     }
 

@@ -5,6 +5,12 @@ export class LoadScene extends Phaser.Scene {
 
     preload() {
         this.load.image('harpoon', './images/harpoon.png');
+        this.load.image('cutscene1', './images/cutscene1.png');
+        this.load.image('victorymenu', './images/victorymenu.png');
+        this.load.image('goback', './images/goback.png');
+        this.load.image('victory', './images/victory.png');
+        this.load.image('ghostoffice', './images/ghostoffice.png');
+        this.load.image('pressE', './images/pressE.png');
         this.load.image('background2', './images/bg3.png');
         this.load.image('background3', './images/bg5.png');
         this.load.image('background', './images/bg4.png');
@@ -14,6 +20,7 @@ export class LoadScene extends Phaser.Scene {
         this.load.image('life', '/images/life.png');
         this.load.image('changelevel', '/images/changelevelE.png');
         this.load.image('changelevelto1', '/images/changelevelto1.png');
+        this.load.image('mainmenu', '/images/mainmenu.png');
 
 
         this.load.image('balls', './ball/zero.png');
@@ -34,7 +41,7 @@ export class LoadScene extends Phaser.Scene {
         this.createAnimations();
 
 
-        this.scene.start('Level001');
+        this.scene.start('MainMenu');
 
     }
 
